@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="src/logging/Nyx.Observability.Logging.Console/Nyx.Observability.Logging.Console.csproj" />
+  <Project Path="src/logging/Nyx.Observability.Logging.Core/Nyx.Observability.Logging.Core.csproj" />
+  <Project Path="src/logging/Nyx.Observability.Logging.Default/Nyx.Observability.Logging.Default.csproj" />
+  <Project Path="src/logging/Nyx.Observability.Logging.EventLog/Nyx.Observability.Logging.EventLog.csproj" />
+  <Project Path="src/logging/Nyx.Observability.Logging.File/Nyx.Observability.Logging.File.csproj" />
+  <Project Path="src/logging/Nyx.Observability.Logging.Loki/Nyx.Observability.Logging.Loki.csproj" />
+</Solution>
