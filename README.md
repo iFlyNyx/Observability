@@ -1,6 +1,6 @@
 ﻿# Nyx Observability Platform
 
-This package is designed to be used as a baseline library for an observability platform. It provides a set of tools to be used in your development to enable standard and consistent features across your applications.
+This solution is designed to be used as a baseline library for an observability platform. It provides a set of tools to be used in your development to enable standard and consistent features across your applications.
 
 ## Logging
 
