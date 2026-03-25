@@ -6,4 +6,12 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\Nyx.Observability.Logging.Console\Nyx.Observability.Logging.Console.csproj" />
+      <ProjectReference Include="..\Nyx.Observability.Logging.Core\Nyx.Observability.Logging.Core.csproj" />
+      <ProjectReference Include="..\Nyx.Observability.Logging.EventLog\Nyx.Observability.Logging.EventLog.csproj" />
+      <ProjectReference Include="..\Nyx.Observability.Logging.File\Nyx.Observability.Logging.File.csproj" />
+      <ProjectReference Include="..\Nyx.Observability.Logging.Loki\Nyx.Observability.Logging.Loki.csproj" />
+    </ItemGroup>
+
 </Project>
