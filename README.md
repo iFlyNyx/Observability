@@ -12,8 +12,6 @@ For the purposes of this package, the logging platform is built around Serilog.
 
 The appsettings definitions for the core library is intended to be a custom object that is not directly dependent on the Serilog.Settings.Configuration package. This allows for a more flexible and customized approach for configuring the logging settings. However, the additional packages that are provided have logic interally to them to ensure that if the serilog appsettings is used, it will prefer those settings over the custom appsettings. This is to help avoid confusion and duplicate logging configuration from both packages.
 
-A specific settings value is configureable to enable environment specific logging settings; IsEnabled. With this setting set to false, your application program/startup does not need to change as the underlying library will use this value to configure if the supplied sink should be enabled.
-
 ### Logging - Core
 
 The core logging library provides the base functionality that other libraries are dependent upon. It has standard models for appsettings configurations, logging enrichers, and the base implementation of the logger itself. This library is not intended to be used directly and should be imported by the other libraries provided.

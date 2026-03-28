@@ -4,6 +4,30 @@
         <TargetFramework>net10.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <PackageId>Nyx.Observability.Logging.Core</PackageId>
+        <Version>0.0.1-alpha</Version>
+        <Authors>iFlyNyx</Authors>
+        <Description>Simple standardized logging package utilizing Serilog with some default enrichers.</Description>
+        <PackageTags>serilog;logging;</PackageTags>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
     </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="README.md" Pack="true" PackagePath="" />
+        <None Include="LICENSE.txt" Pack="true" PackagePath="" />
+    </ItemGroup>
+    
+    <ItemGroup>
+      <PackageReference Include="Serilog" Version="4.3.1" />
+      <PackageReference Include="Serilog.AspNetCore" Version="10.0.0" />
+      <PackageReference Include="Serilog.Enrichers.Environment" Version="3.0.1" />
+      <PackageReference Include="Serilog.Enrichers.Thread" Version="4.0.0" />
+      <PackageReference Include="Serilog.Exceptions" Version="8.4.0" />
+      <PackageReference Include="Serilog.Extensions.Hosting" Version="10.0.0" />
+      <PackageReference Include="Serilog.Extensions.Logging" Version="10.0.0" />
+      <PackageReference Include="Serilog.Settings.Configuration" Version="10.0.0" />
+      <PackageReference Include="Serilog.Sinks.Console" Version="6.1.1" />
+    </ItemGroup>
 
 </Project>
