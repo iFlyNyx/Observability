@@ -17,6 +17,8 @@ If you'd like to read more on the appsettings.json configuration approach, you c
 Example of usage in a standard application, such as a Worker Service:
 
 ```csharp
+using Nyx.Observability.Logging.Core.Extensions;
+
 var builder = Host.CreateDefaultBuilder(args)
     .ConfigureServices((context, services) => 
     {
@@ -29,6 +31,8 @@ var builder = Host.CreateDefaultBuilder(args)
 If you'd like to extend the logger configuration with your own custom configuration, you can pass in a callback method:
 
 ```csharp
+using Nyx.Observability.Logging.Core.Extensions;
+
 var builder = Host.CreateDefaultBuilder(args)
     .ConfigureServices((context, services) => 
     {
@@ -48,6 +52,8 @@ var builder = Host.CreateDefaultBuilder(args)
 Similarly, in a Web Api Application, you can utilize the same UseNyxLogging extension around your service registration. Additionally, you can utilize the middleware extensions provided to capture and append additional information to your logs.
 
 ```csharp
+using Nyx.Observability.Logging.Core.Extensions;
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.UseNyxLogging(builder.Configuration);
@@ -70,3 +76,15 @@ app.UseMiddleware<NyxMiddlewareEnricher>();
 
 app.Run();
 ```
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE.txt) file for details.
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a pull request or open an issue if you have any suggestions or improvements.
+
+## Acknowledgements
+
+This library is built on top of the Serilog logging library and it's relevant Sinks, Enrichers, and Settings packages. Structured logging is a powerful tool for any observability strategy, and these packages provide a great foundation to build on.
