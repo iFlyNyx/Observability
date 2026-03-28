@@ -16,11 +16,11 @@ public class NyxMiddlewareEnricher : IMiddleware
             correlationId = context.Request.Headers[CorrelationHeader].FirstOrDefault() ?? Guid.NewGuid().ToString();
             context.Request.Headers[CorrelationHeader] = correlationId;
         }
-        catch (Exception ex)
+        catch (Exception)
         {
             correlationId = Guid.NewGuid().ToString();
         }
-        
+
         using (LogContext.PushProperty("CorrelationId", correlationId));
         
         await next(context);
